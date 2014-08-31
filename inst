@@ -1,6 +1,7 @@
-./install_all.sh >& ./some.log
+#!/bin/bash
+/bin/bash ./install_all.sh >& ./some.log
 while grep "Connection reset by peer" ./some.log ;
 do
 	cat " " > ./some.log;
-	./install_all.sh >& ./some.log;
+	/bin/bash ./install_all.sh >& ./some.log;
 done
