@@ -9,7 +9,14 @@ then
 	exit;
 fi
 
-virtualenv $DM_NAME;
+virtualenv ~/$DM_NAME;
+
+while [ ! -f ~/$DM_NAME ];
+do
+	echo "create virtualenv .....";
+	sleep 5;
+done
+
 source "~/$DM_NAME/bin/activate"
 
 mkdir -p "~/$DM_NAME/SRC" && mv ./install_all.sh  ./inst  "~/$DM_NAME/SRC/";
