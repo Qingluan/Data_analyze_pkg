@@ -17,7 +17,7 @@ do
 	sleep 5;
 done
 
-source "~/$DM_NAME/bin/activate"
+source ~/$DM_NAME/bin/activate
 
 mkdir -p "~/$DM_NAME/SRC" && mv ./install_all.sh  ./inst  "~/$DM_NAME/SRC/";
 cd "~/$DM_NAME/SRC/";
