@@ -1,3 +1,4 @@
+pip install ipython
 pip install tornado
 pip install jinja2
 pip install six

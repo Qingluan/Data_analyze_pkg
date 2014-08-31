@@ -18,9 +18,10 @@ do
 done
 
 source ~/$DM_NAME/bin/activate
-
-mkdir -p "~/$DM_NAME/SRC" && mv ./install_all.sh  ./inst  "~/$DM_NAME/SRC/";
-cd "~/$DM_NAME/SRC/";
+echo "entry san ...";
+sleep 5
+echo "$(mkdir -p ~/$DM_NAME/SRC && mv ./install_all.sh  ./inst  ~/$DM_NAME/SRC/)";
+cd ~/$DM_NAME/SRC/;
 
 /bin/bash ./inst;
 
