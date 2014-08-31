@@ -3,6 +3,6 @@
 while grep "Connection reset by peer" ./some.log ;
 do
 	cat " " > ./some.log;
-	/bin/bash ./install_all.sh >& ./some.log;
-	tail -n 1 ./some.log;
+	/bin/bash ./install_all.sh 2>&1 |tee  ./some.log;
+
 done
