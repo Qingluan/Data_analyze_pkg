@@ -1,5 +1,6 @@
 #!/bin/sh
 DM_NAME="Data_python"
+ 
 
 pip install virtualenv >& ./error.log
 if grep "error" ./error.log;
@@ -14,5 +15,5 @@ source "~/$DM_NAME/bin/activate"
 mkdir -p "~/$DM_NAME/SRC" && mv ./install_all.sh  ./inst  "~/$DM_NAME/SRC/";
 cd "~/$DM_NAME/SRC/";
 
-./inst
+./inst;
 
