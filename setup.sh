@@ -11,7 +11,7 @@ fi
 
 virtualenv ~/$DM_NAME;
 
-while [ ! -f ~/$DM_NAME ];
+while [ ! -d ~/$DM_NAME ];
 do
 	echo "create virtualenv .....";
 	sleep 5;
