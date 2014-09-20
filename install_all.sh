@@ -7,8 +7,8 @@ pip install gevent
 pip install pandas
 pip install numpy
 pip install matplotlib
+pip install pillow
 pip install mock
-pip install PIL --allow-external PIL --allow-unverified PIL
 pip install PySide
 pip install six
 pip install scipy

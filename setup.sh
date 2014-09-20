@@ -14,7 +14,7 @@ sudo virtualenv ~/$DM_NAME;
 while [ ! -f ~/$DM_NAME/bin/activate ];
 do
 	echo "create virtualenv .....";
-	sleep 5;
+	sleep 3;
 done
 
 source ~/$DM_NAME/bin/activate
