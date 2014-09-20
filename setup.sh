@@ -9,7 +9,7 @@ then
 	exit;
 fi
 
-virtualenv ~/$DM_NAME;
+sudo virtualenv ~/$DM_NAME;
 
 while [ ! -f ~/$DM_NAME/bin/activate ];
 do
