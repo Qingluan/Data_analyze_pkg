@@ -2,7 +2,7 @@
 DM_NAME="Data_python"
  
 
-pip install virtualenv >& ./error.log
+sudo pip install virtualenv >& ./error.log
 if grep "error" ./error.log;
 then 
 	cat ./error.log;

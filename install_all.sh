@@ -13,3 +13,5 @@ pip install PySide
 pip install six
 pip install scipy
 pip install virtualenv
+pip install pymongo
+pip install MySQL-python
